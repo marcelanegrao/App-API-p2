@@ -4,14 +4,12 @@ import { ActivityIndicator, Text, Card, Title, Searchbar, Button } from 'react-n
 import { type NavigationProp, type RouteProp } from '@react-navigation/native'; 
 import { RootStackParamList } from './App'; 
 
-// Tipagem e Constantes
 type MealListItem = {
   idMeal: string;
   strMeal: string;
   strMealThumb: string;
 };
 
-// Tipo de props definido internamente
 type MealListProps = {
     navigation: NavigationProp<RootStackParamList, 'MealList'>;
     route: RouteProp<RootStackParamList, 'MealList'>;
